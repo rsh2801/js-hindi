@@ -1,7 +1,7 @@
 
 //note-working of comarisions >,<,>=,<= and == and === are diff
-//== comapre by changing data also "2"==2 true
-//=== compare not only value but data type also "2"===2 false
+//== comapre by changing datatype also "2"==2 ->true
+//=== compare not only value but data type also "2"===2 ->false
 
 
 
