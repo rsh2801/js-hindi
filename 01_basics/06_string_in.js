@@ -45,7 +45,20 @@ const newsli=gameName.slice(-6,4) //ye bhi substr ke liye hota hai but neg ind d
 //substr me neg value dega to 0 le lega usko
 console.log(newsli);
 
+//remove spaces
+const newStringOne = "   hitesh    "
+console.log(newStringOne);
+console.log(newStringOne.trim());
 
+//to replace something in string
+const url = "https://hitesh.com/hitesh%20choudhary"
+console.log(url.replace('%20', '-'))
+
+//is given "str" is in the string-> true of false
+console.log(url.includes('sundar')) //false
+
+//split on basis of given "str" into an array
+console.log(gameName.split('-'));
 
 
 
