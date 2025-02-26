@@ -58,7 +58,8 @@ console.log(url.replace('%20', '-'))
 console.log(url.includes('sundar')) //false
 
 //split on basis of given "str" into an array
-console.log(gameName.split('-'));
+console.log(gameName.split('-'));//aur bhi eek parameter hota hi
+
 
 
 
