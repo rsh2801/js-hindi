@@ -19,7 +19,8 @@ const all_new_heros = [...marvel_heros, ...dc_heros]
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 
-const real_another_array = another_array.flat(Infinity)
+//flat ke annader - level to be flannen likhna  hai ,ie-infinity likh kar hum sara level flat karwa rahe
+const real_another_array = another_array.flat(Infinity)  
 console.log(real_another_array);
 
 
