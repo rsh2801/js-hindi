@@ -4,8 +4,10 @@
 //arary of array,array of string sab posible hai zero based indexing
 // const myArr = [0, 1, 2, 3, 4, 5]
 // const myHeors = ["shaktiman", "naagraj"]
+// const myArr=[0,"rosh",[1,2,3]]
 // const myArr2 = new Array(1, 2, 3, 4)
-// console.log(myArr[1]);
+// console.log(myArr);
+// console.log([myArr[1]]);
 
 
 //----------------basic operation-----------/
