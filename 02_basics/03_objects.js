@@ -45,8 +45,8 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+JsUser.greeting();
+console.log(JsUser.greetingTwo());// see comment 0f 16 vid
 
 
 
