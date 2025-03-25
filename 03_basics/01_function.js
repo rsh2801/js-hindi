@@ -42,12 +42,19 @@ function loginUserMessage(username){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+
+//--------------------------------------------------------SHOPPING CART-rest operator------------------------------------------------------------------------------------//
+//KABHI KABHI HAME PATA NAHI HOTA KII KITNA INPUT HAI SO IN SUCH CASE "REST - ..." OPERATOR IS USING TO COLLECT THEM TO ONE IN FORM OF ARRAY
+//SPREAD OPERATOR BHI EAISA HE DIKHA HAI BUT USE CASE KE ANNUSAR DHAL LETE HAI AND ACT AS REST AND SPREAD
+
+function calculateCartPrice(...num1){
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+// console.log(calculateCartPrice(200, 400, 500, 2000)) //output=  [200,400,500,600]
 
+
+//-------------------------------------------------------------------function with object & array as argument-------------------------------------------------------------//
 const user = {
     username: "hitesh",
     prices: 199
@@ -57,7 +64,10 @@ function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
+//calling upper obj *********
 // handleObject(user)
+
+ //calling fxn with obj define instantaneously****
 handleObject({
     username: "sam",
     price: 399
@@ -70,4 +80,15 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+// console.log(returnSecondValue([200, 400, 500, 1000]));
+
+//----------------------------------------------------------------------------INTERVIEW----------------------------------------------//
+
+//1. output of this
+function  flashcard(val1,val2,...num){
+    return num
+
+}
+
+//val1,val2 takes up first 2 values
+console.log(flashcard(200,300,400,500)) //o/p=[400,500]
