@@ -48,7 +48,7 @@ if (true) {
 // console.log(username);   //wrong
 
 
-// ------------------------------------------------------------------- interesting ------------------------------------------------------------------//
+// ------------------------------------------------------------------- interesting : (hosting conscept further padhege)------------------------------------------------------------------//
 //IN JS VARIABLE ARE VERY POWERFUL THE CAN CONTAIN A FUNCTION INSIDE THEM 
 
 //1. DIRECT FXN
