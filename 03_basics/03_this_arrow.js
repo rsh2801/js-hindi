@@ -73,9 +73,10 @@ const addTwo = (num1, num2) => ({username: "hitesh"})
 console.log(addTwo(3, 4))
 
 
+// ****EXTRA****
 // const myArray = [2, 5, 3, 7, 8]
 
-// myArray.forEach()
+// myArray.forEach(()=>{})
 
 
 //------------------------------------------------------------------------------INTERVIWER----------------------------------------------------------------//
