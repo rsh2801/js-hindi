@@ -1,7 +1,10 @@
 //------------------------------------------------------------------------------filter need over for each loop---------------------------------------------------------------------------------------//
+//filter use to remove elemets that donot match the condition, use for selecting elements with new array 
+//original array remain un change
+
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-//************for each loop do not return anything it simple perform th fxn */
+//for each loop do not return anything it simple perform the fxn //
 const values = coding.forEach( (item) => {
     //console.log(item);
     return item
@@ -9,7 +12,7 @@ const values = coding.forEach( (item) => {
 //undefined value
 // console.log(values);
  
-//*************meanwhile filter return an array satisfying the con dition inside fxn */
+//meanwhile filter return an array satisfying the con dition inside fxn //
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // implicit return taught in arrow fxn
@@ -22,17 +25,18 @@ const newNums = myNums.filter( (num) => num>4)
 
 
 //************FILTER WORK BY FOR EACH LOOP*********** */
-// const newNums = []
+const newNums1 = []
 
-// myNums.forEach( (num) => {
-//     if (num > 4) {
-//         newNums.push(num)
-//     }
-// } )
+myNums.forEach( (num) => {
+    if (num > 4) {
+        newNums1.push(num)
+    }
+} )
 
-console.log(newNums);
+// console.log(newNums1);
 
-
+//-----------------------------------------------------------------------------------------object triming with filter------------------------------------------------------------------------//
+//important for data bases
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
