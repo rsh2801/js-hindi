@@ -5,13 +5,18 @@
 const myarr=[1,2,3,3,4]
 const startvalue=5;
 const billing=myarr.reduce( function(accumulator,currvalue){
-    console.log(`acc: ${accumulator} and currval: ${currvalue}`);
+    // console.log(`acc: ${accumulator} and currval: ${currvalue}`);
     return accumulator+currvalue;
 },startvalue)
 
-console.log(billing);
+ //orr
+ const billing1=myarr.reduce( (acc,currval)=> acc+currval,startvalue)
 
-//adding total bill from data base
+ console.log(billing);
+ console.log(billing1);
+ 
+
+//---------------------------------------------------------------------adding total bill from data base----------------------------------------------------------------------//
 const shoppingCart = [
     {
         itemName: "js course",
@@ -33,4 +38,4 @@ const shoppingCart = [
 
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 
-console.log(priceToPay);
+// console.log(priceToPay);
