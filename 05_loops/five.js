@@ -31,7 +31,7 @@ coding.forEach( (val,index,arr)=>{
     
 })
 
-//array of obj
+//DATABASE IMP extracting data from array of obj*********
 const myCoding = [
     {
         languageName: "javascript",
