@@ -1,4 +1,6 @@
 //----------------------------------------------------------------------------for in loop-----------------------------------------------------------------------------------------//
+//yaha fir in loop me taken variavle as key use hota hai
+//applicable to object
 
 const myObject = {
     js: 'javascript',
@@ -17,6 +19,7 @@ for (const key in programming) {
     //console.log(programming[key]);
 }
 
+//******************************MAPS iteratable nhi hai so inme ye nahi lag sakat*/
 // const map = new Map()
 // map.set('IN', "India")
 // map.set('USA', "United States of America")
