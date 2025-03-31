@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------for in loop-----------------------------------------------------------------------------------------//
 //yaha fir in loop me taken variavle as key use hota hai
-//applicable to object
-
+//applicable to object,and in array as key value 
+//not applicable to maps
 const myObject = {
     js: 'javascript',
     cpp: 'C++',
