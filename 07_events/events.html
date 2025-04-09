@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    //------------------------------event cathing------------------------------>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+     // .attachEvent() on explorer 
+    // jQuery - .on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log(e)}, false)
+
+        //----------------------------bubbling mode-neeche se upar-------------------//
+    //     document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("images clicked");
+       
+    // }, false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+        
+    // }, false)
+
+    //-----------------------------------capturing mod--upar se neeche---------------------------------//
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("images clicked");
+       
+    // }, true)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+        
+    // }, true)
+
+
+    //--------------------------------------stop propagation------------------------------//
+    //help to stop bublling or capturing from smaller element to bigger
+    //stop printing of images clicked
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("images clicked");
+        
+       
+    // }, false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation();
+    //     e.stopPropagation();
+        
+    // }, false)
+    
+
+    //---------------------------------preventDefault action on doing that event---------//
+    //prevent default openening on clicking google link 
+    
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation()
+        console.log("google clicked");
+    }, false)
+   
+   
+    // -----------------------------------project to delete clicked image-----------------//
+//    .remove()
+//    .parenNode.removeChile(child_name)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        //if lagana pada becz without if aga tarte too img chor kar list me click hota to pura ul gayab ho jata
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+            // removeIt.parentNode.removeChild(removeIt);
+        }
+    
+        
+    })
+    
+   
+</script>
+</html>
+
+
+
+
+
+
+
+
+<!-- contents -->
+
+<!-- events actching approach  -->
+ <!-- 1.injecting into html as onClick="alert('owl clicked')" not a feasible efficient code 
+    2.on clicked event by DOM give less feature no propagation feature
+    3.event listerner -->
+
+<!-- bubbling vs capturing-  -->
+
+<!-- stoppropagation vs prevent default -->
+
+<!-- small project to delete image when clicked -->
+
+<!-- interviwer-ho sakta hai bole jaka click kar rahe waha gola banao etc -->
