@@ -10,16 +10,18 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    const sayHitesh = function(){
-        console.log("Hitesh");
-    }
+   
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
-
+    
+    //reference ena fxn ka only  syntax= setTimeout(handlerfxn,time_ms)
     const changeMe = setTimeout(changeText, 2000)
 
-    document.querySelector('#stop').addEventListener('click', function(){
+
+    
+    //stop settime out if stop pressed i.e. clear call back queue
+    document.querySelector('#stop').addEventListener('click', function(){   
         clearTimeout(changeMe)
         console.log("STOPPED")
     })
