@@ -1,3 +1,17 @@
+
+class promise2{
+    constructor(doasynherefxn){
+        function afterdone_resolving(){
+            this.resolve();
+        }
+        doasynherefxn(afterdone_resolving);
+    }
+    then(callback){
+        this.resolve=callback;
+    }
+}
+//chorr dooo mat samjho upar confusing hai
+
 //-------------------------------------------------------------------------promised created------------------------------------------------------------------------------//
 //a promise is better way to say completion of a task
 const promiseOne = new Promise(function(resolve, reject){    //resolve - reject is also a fxn
