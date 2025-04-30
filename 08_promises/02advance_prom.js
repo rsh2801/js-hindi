@@ -1,4 +1,4 @@
-
+-----------------------------------------------------------------data access------------------------------------------------
 
 // new Promise(function(resolve, reject){
 //     setTimeout(function(){
@@ -31,6 +31,7 @@
 //     }, 1000)
 // })
 
+// --------------------------------------------------------------chaining imp for callback hell reolution--------------------------------------------
 //  promiseFour
 //  .then((user) => {
 //     console.log(user);
